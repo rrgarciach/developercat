@@ -22,38 +22,25 @@
 
 	</head>
 	<body>
-		<div id="header">
-			<div class="container">
-				<div role="navigation" class="navbar navbar-default">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-							</button>
-							<a href="/" class="navbar-brand">Developer Cat</a>
-						</div>
-						<div class="collapse navbar-collapse">
-							<ul class="nav navbar-nav navbar-left">
-									{{# each navLinks}}
-									<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-										<a href="{{ href }}">{{ label }}</a>
-									</li>
-								{{/each}}
-							</ul>
-							<ul class="nav navbar-nav navbar-right">
-								{{#if user}}
-								<li><a href="/keystone/signout">Sign Out</a></li>
-								{{else}}
-								<li><a href="/keystone/signin">Sign In</a></li>
-								{{/if}}
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="body">
+		<div id="container">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Developer Cat</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+						{{# each navLinks}}
+							<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}} >
+								<a href="{{ href }}">{{ label }}</a></li>
+						{{/each}}
+                    </ul>
+                    <ul class="right hide-on-med-and-down">
+						{{#if user}}
+                        <li><a href="/keystone/signout">Sign Out</a></li>
+						{{else}}
+                        <li><a href="/keystone/signin">Sign In</a></li>
+						{{/if}}
+                    </ul>
+                </div>
+            </nav>
 			<!--
 				Flash messages allow you to display once-off status messages to users, e.g. form
 				validation errors, success messages, etc
