@@ -16,7 +16,6 @@
 		//- Safely remove this block if you are not targeting IE8 --}}
 
         <!-- Materialize CSS mnified CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 		
 		<!--[if lt IE 9]>
 			<script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js"></script>
@@ -25,52 +24,76 @@
 
 	</head>
 	<body>
-		<div id="container">
+	<div id="header">
+    <div id="container">
+        <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
+                    <!-- sidenav bar -->
+                    <ul id="slide-out" class="side-nav">
+                        <li>
+                            <div class="userView">
+                                <img class="background" src="images/office.jpg">
+                                <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+                                <a href="#!name"><span class="white-text name">John Doe</span></a>
+                                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                            </div>
+                        </li>
+                        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                        <li><a href="#!">Second Link</a></li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li><a class="subheader">Subheader</a></li>
+                        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                    </ul>
+                    <!-- hamburger button -->
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i
+                            class="material-icons">menu</i></a>
+                    <!-- navbar -->
                     <a href="#" class="brand-logo">Developer Cat</a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
 						{{# each navLinks}}
-							<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}} >
-								<a href="{{ href }}">{{ label }}</a></li>
+                            <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}} >
+                                <a href="{{ href }}">{{ label }}</a></li>
 						{{/each}}
-                    </ul>
-                    <ul class="right hide-on-med-and-down">
 						{{#if user}}
-                        <li><a href="/keystone/signout">Sign Out</a></li>
+                            <li><a href="/keystone/signout">Sign Out</a></li>
 						{{else}}
-                        <li><a href="/keystone/signin">Sign In</a></li>
+                            <li><a href="/keystone/signin">Sign In</a></li>
 						{{/if}}
                     </ul>
                 </div>
             </nav>
-			<!--
-				Flash messages allow you to display once-off status messages to users, e.g. form
-				validation errors, success messages, etc
-			-->
-			{{#if messages}}
-			<div id="flash-messages" class="container">
+        </div>
+        <!--
+            Flash messages allow you to display once-off status messages to users, e.g. form
+            validation errors, success messages, etc
+        -->
+		{{#if messages}}
+            <div id="flash-messages" class="container">
 				{{#if messages.info}}
-				<div class="alert alert-info">
+                    <div class="alert alert-info">
 						{{{flashMessages messages.info}}}
-				</div>
+                    </div>
 				{{/if}}
 				{{#if messages.success}}
-				<div class="alert alert-success">
+                    <div class="alert alert-success">
 						{{{flashMessages messages.success}}}
-				</div>
+                    </div>
 				{{/if}}
 				{{#if messages.warning}}
-				<div class="alert alert-warning">
+                    <div class="alert alert-warning">
 						{{{flashMessages messages.warning}}}
-				</div>
+                    </div>
 				{{/if}}
 				{{#if messages.error}}
-				<div class="alert alert-danger">
+                    <div class="alert alert-danger">
 						{{{flashMessages messages.error}}}
-				</div>
+                    </div>
 				{{/if}}
-			</div>
+            </div>
+        </div>
 			{{/if}}
 			<!-- The content block should contain the body of your template's content-->
 			{{{body}}}
@@ -93,10 +116,11 @@
 		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
 
         <!-- Materialize CSS mnified JS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>\
-		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	
         <!-- Compiled and minified JavaScript -->
-        <script src="/js/layout/layout.js"></script>
+        <script src="/js/site/layout/layout.js"></script>
+        <script src="/js/site/index/index.js"></script>
 		{{{isAdminEditorJS user}}}
 	</body>
 </html>
