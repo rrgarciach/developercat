@@ -12803,3 +12803,13 @@ footer.page-footer {
 
 #index .board .card-title {
   margin-left: 1em; }
+
+#index .card.horizontal .card-image {
+  width: 50%; }
+  #index .card.horizontal .card-image #form-image {
+    background-image: url("../../images/cats/01.jpg");
+    background-size: cover;
+    height: 100%; }
+
+#index form .row {
+  margin-bottom: 0; }
