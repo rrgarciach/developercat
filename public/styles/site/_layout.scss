@@ -1,4 +1,4 @@
-#header {
+header {
   nav {
 	.brand-logo {
 	  margin-left: 1em;
@@ -6,11 +6,10 @@
   }
 }
 
-#footer {
-  margin-top: 30px;
-  border-top: 1px solid #eeeeee;
-  padding-top: 30px;
-  color: #777777;
+footer {
+  &.page-footer {
+  	margin-top: 0;
+  }
 }
 
 .gallery-image img {
