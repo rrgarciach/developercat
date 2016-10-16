@@ -12785,6 +12785,14 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 header nav .brand-logo {
   margin-left: 1em; }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
+
 footer.page-footer {
   margin-top: 0; }
 
