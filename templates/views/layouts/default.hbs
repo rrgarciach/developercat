@@ -54,7 +54,8 @@
                         <a href="#" class="brand-logo">Developer Cat</a>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
 							{{# each navLinks}}
-                                <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}} >
+                                <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+                                    <!--<i class="material-icons left">{{ icon }}</i>-->
                                     <a href="{{ href }}">{{ label }}</a></li>
 							{{/each}}
 							{{#if user}}
