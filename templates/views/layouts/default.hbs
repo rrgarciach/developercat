@@ -15,7 +15,8 @@
 		{{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
 		//- Safely remove this block if you are not targeting IE8 --}}
 
-        <!-- Materialize CSS mnified CSS -->
+        <!-- Materialize Design icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		
 		<!--[if lt IE 9]>
 			<script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js"></script>
@@ -103,24 +104,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
-                        <h5 class="white-text">Footer Content</h5>
+                        <h5 class="white-text">Let's get connected</h5>
                         <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
                     </div>
                     <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Links</h5>
+                        <h5 class="white-text">Section</h5>
                         <ul>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+							{{# each navLinks}}
+                                <li>
+                                    <a class="{{#ifeq ../section key}}teal-text{{else}}grey-text{{/ifeq}}
+                                    text-lighten-3" href="{{ href }}">{{ label }}</a></li>
+							{{/each}}
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                    © 2014 Copyright Text
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                    Ruy Rodrigo Garcia Chavez © 2016. All rights Reserved.
                 </div>
             </div>
         </footer>
