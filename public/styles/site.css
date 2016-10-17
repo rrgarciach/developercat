@@ -12801,13 +12801,19 @@ footer.page-footer {
   max-width: 100%;
   height: auto; }
 
+#index .carousel-slider {
+  height: 650px;
+  background-image: url("../../images/carrousel/01.jpg");
+  background-size: cover;
+  background-position: center; }
+
 #index .board .card-title {
   margin-left: 1em; }
 
 #index .card.horizontal .card-image {
   width: 50%; }
   #index .card.horizontal .card-image #form-image {
-    background-image: url("../../images/cats/01.jpg");
+    background-image: url("../../images/cats/box.jpg");
     background-size: cover;
     background-position: center;
     height: 100%; }
