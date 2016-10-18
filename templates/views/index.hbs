@@ -14,8 +14,7 @@
 			<!--</figure>-->
         <!--</div>-->
         <div class="carousel-item white-text" href="#two!">
-            <h1>A software developer begins a project by coding,
-                but a software engineer begins a project by designing.</h1>
+            <h1>{{ whatIDo }}</h1>
         </div>
         <div class="carousel-item white-text" href="#three!">
             <h1>A software developer begins a project by coding,
@@ -27,11 +26,6 @@
         </div>
     </div>
 
-    <!-- Stalking cat -->
-    <div class="parallax-container">
-        <div class="parallax"><img src="/images/cats/01.jpg"></div>
-    </div>
-
     <!-- Who am I -->
     <div class="section white">
         <div class="row container">
@@ -41,79 +35,49 @@
             <div class="col s10">
                 <div class="card">
                     <div class="card-content">
-                        <p>As a passionate of technology that loves to do more everyday, I have years of experience on
-                            Web development with JavaScript technologies (such as Node.js, AngularJS, Ionic Framework
-                            and Angular2) and PHP. I also have experience with Web Services and REST API (SaaS
-                            architectures) design and development.
-                        </p>
+                        <p>
+                            I’m a passionate about technology who is always looking for new tools and skills in order to be able to achieve and do more everyday. I firmly believe in research, design, structure and plan every project in order to meet its requirements and achieve its goals.
+						</p>
+                        <br>
+						<p>
+                            I have solid experience on Web development with JavaScript technologies such as Node.js, AngularJS, Ionic Framework and Angular2 as well as other related Web technologies like PHP. I also have experience with Web Services and REST API (SaaS architectures) design and development as well as with IoT prototype projects using Arduino and ESP8266 boards.
+						</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Stalking cat -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="/images/cats/01.jpg"></div>
+    </div>
+
+    <!-- What I Do -->
+    <div class="section white">
+        <div class="row container">
+            <div class="col s12">
+                <h4>What I Do</h4>
+            </div>
+			{{# each whatIDo}}
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/{{ image }}">
+                        <span class="card-title">{{ title }}</span>
+                    </div>
+                    <div class="card-content">
+                        <p>{{ description }}</p>
+                    </div>
+                </div>
+            </div>
+			{{/each}}
         </div>
     </div>
 
     <!-- Stalking cat -->
     <div class="parallax-container">
         <div class="parallax"><img src="/images/cats/02.jpg"></div>
-    </div>
-
-    <!-- What I Do -->
-    <div class="section white">
-        <div class="row">
-            <div class="col s12">
-                <h4>What I Do</h4>
-            </div>
-            <div class="col s12 m3">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/product-definition.jpg">
-                        <span class="card-title">Product Definition</span>
-                    </div>
-                    <div class="card-content">
-                        <!--<span class="card-title">Product Definition</span>-->
-                        <p>ds</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/technical-management.jpg">
-                        <span class="card-title">Technical Management</span>
-                    </div>
-                    <div class="card-content">
-                        <p>ds</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/architectural-design.jpg">
-                        <span class="card-title">Software Architecture and Design</span>
-                    </div>
-                    <div class="card-content">
-                        <p>ds</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m3">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/software-development.jpg">
-                        <span class="card-title">Software Development</span>
-                    </div>
-                    <div class="card-content">
-                        <p>ds</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Stalking cat -->
-    <div class="parallax-container">
-        <div class="parallax"><img src="/images/cats/03.jpg"></div>
     </div>
 
     <!-- Projects -->
@@ -184,7 +148,7 @@
 
     <!-- Stalking cat -->
     <div class="parallax-container">
-        <div class="parallax"><img src="/images/cats/04.jpg"></div>
+        <div class="parallax"><img src="/images/cats/03.jpg"></div>
     </div>
 
     <!-- Contact form -->

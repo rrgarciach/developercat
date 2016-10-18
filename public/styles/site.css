@@ -12810,6 +12810,9 @@ footer.page-footer {
 #index .board .card-title {
   margin-left: 1em; }
 
+#index p {
+  text-align: justify; }
+
 #index .card.horizontal .card-image {
   width: 50%; }
   #index .card.horizontal .card-image #form-image {
