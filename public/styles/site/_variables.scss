@@ -4,7 +4,7 @@
 
 @import "../materialize/materialize";
 
-$primary-color: color("teal", "lighten-1") !important;
+$primary-color: color("purple", "darken-4") !important;
 $primary-color-light: false !default;
 $primary-color-dark: false !default;
 @if not $primary-color-light {

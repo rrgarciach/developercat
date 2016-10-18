@@ -6,13 +6,6 @@
             <source src="http://touchtitans.com/wp-content/uploads/2014/11/video-background.webm" type="video/webm">
             <source src="http://touchtitans.com/wp-content/uploads/2014/11/video-background.ogv" type="video/ogg">
         </video>
-        <!--<div class="carousel-item teal white-text" href="#one!">-->
-			<!--<figure>-->
-                <!--<img src="image" alt="">-->
-				<!--<h2>First Panel</h2>-->
-				<!--<p class="white-text">This is your first panel</p>-->
-			<!--</figure>-->
-        <!--</div>-->
         <div class="carousel-item white-text" href="#two!">
             <h1>{{ whatIDo }}</h1>
         </div>
@@ -33,15 +26,26 @@
                 <h4 class="header">Who Am I</h4>
             </div>
             <div class="col s10">
-                <div class="card">
-                    <div class="card-content">
-                        <p>
-                            I’m a passionate about technology who is always looking for new tools and skills in order to be able to achieve and do more everyday. I firmly believe in research, design, structure and plan every project in order to meet its requirements and achieve its goals.
-						</p>
-                        <br>
-						<p>
-                            I have solid experience on Web development with JavaScript technologies such as Node.js, AngularJS, Ionic Framework and Angular2 as well as other related Web technologies like PHP. I also have experience with Web Services and REST API (SaaS architectures) design and development as well as with IoT prototype projects using Arduino and ESP8266 boards.
-						</p>
+                <div class="card horizontal">
+                    <div class="card-image hide-on-small-only">
+                        <img src="images/me.jpg">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>
+                                I’m a passionate about technology who is always looking for new tools and skills in
+                                order to be able to achieve and do more everyday. I firmly believe in research, design,
+                                structure and plan every project in order to meet its requirements and achieve its
+                                goals.
+                            </p>
+                            <br>
+                            <p>
+                                I have solid experience on Web development with JavaScript technologies such as Node.js,
+                                AngularJS, Ionic Framework and Angular2 as well as other related Web technologies like
+                                PHP. I also have experience with Web Services and REST API (SaaS architectures) design
+                                and development as well as with IoT prototype projects using Arduino and ESP8266 boards.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -152,7 +156,7 @@
     </div>
 
     <!-- Contact form -->
-    <div class="section white board">
+    <div id="contact" class="section white board">
         <div class="row container">
             <div class="col s12">
                 <div class="card horizontal">
@@ -165,49 +169,71 @@
                                 <h5 class="header">Let's Talk About Your Next Project!</h5>
                             </div>
                             <div class="row">
+								
                                 <form class="col s12">
                                     <div class="row">
                                         <div class="input-field col s12">
+                                            <i class="material-icons prefix">account_circle</i>
                                             <input id="name" type="text" class="validate">
                                             <label for="name">Name</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
+                                            <i class="material-icons prefix">business</i>
                                             <input id="company" type="text" class="validate">
                                             <label for="company">Company</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
+                                            <i class="material-icons prefix">mail</i>
                                             <input id="email" type="email" class="validate">
                                             <label for="email">Email</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
+                                            <i class="material-icons prefix">call</i>
                                             <input id="phone" type="tel" class="validate">
                                             <label for="phone">Phone</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
+                                            <i class="material-icons prefix">subject</i>
                                             <input id="subject" type="email" class="validate">
                                             <label for="subject">Subject</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
+                                            <i class="material-icons prefix">message</i>
                                             <textarea id="message" class="materialize-textarea"></textarea>
                                             <label for="message">Message</label>
                                         </div>
                                     </div>
+									<div class="row">
+										<div class="col offset-s6">
+                                        	<a class="waves-effect waves-light btn"><i class="material-icons right">send</i>submit</a>
+										</div>
+									</div>
                                 </form>
+								
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="row container">
+			<div class="col">
+				<p>btw... I really love cats.</p>
+			</div>
+		</div>
+		
     </div>
+	
+	
 </div>

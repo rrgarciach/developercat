@@ -26,8 +26,18 @@ exports = module.exports = function (req, res) {
 			description: `Defining`
 		},
 		{
-			title: 'Software Development',
+			title: 'Software/Web Development',
 			image: 'software-development.jpg',
+			description: `Defining`
+		},
+		{
+			title: 'Hybrid Mobile Development',
+			image: 'mobile-development.jpg',
+			description: `Defining`
+		},
+		{
+			title: 'Fight Crime at Nights',
+			image: 'fight-crime.jpg',
 			description: `Defining`
 		},
 	];
