@@ -42,6 +42,44 @@ exports = module.exports = function (req, res) {
 		},
 	];
 
+	locals.projects = [
+		{
+			name: 'Backlog',
+			items: [
+				{
+					name: 'Jupiter API',
+					description: `REST API platform to serve multiple mobile and hardware clients to be integrated as an enterprise ERP system.`,
+					stack: 'Related technologies: Node.js, express.js, Ionic Framework, AngularJS, Arduino',
+				},
+				{
+					name: 'Jupiter API',
+					description: `REST API platform to serve multiple mobile and hardware clients to be integrated as an enterprise ERP system.`,
+					stack: 'Related technologies: Node.js, express.js, Ionic Framework, AngularJS, Arduino',
+				},
+			]
+		},
+		{
+			name: 'In Progress',
+			items: [
+				{
+					name: 'API',
+					description: `REST API platform to serve multiple mobile and hardware clients to be integrated as an enterprise ERP system.`,
+					stack: 'Related technologies: Node.js, express.js, Ionic Framework, AngularJS, Arduino',
+				},
+			]
+		},
+		{
+			name: 'Done',
+			items: [
+				{
+					name: 'Jupiter API',
+					description: `REST API platform to serve multiple mobile and hardware clients to be integrated as an enterprise ERP system.`,
+					stack: 'Related technologies: Node.js, express.js, Ionic Framework, AngularJS, Arduino',
+				},
+			]
+		},
+	];
+
 	// Render the view
 	view.render('index');
 };

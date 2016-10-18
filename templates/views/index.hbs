@@ -93,60 +93,63 @@
             </div>
 
             <!-- Backlog -->
+			{{# each projects }}
             <div class="col s12 m4">
                 <div class="card blue-grey lighten-3">
-                    <span class="card-title white-text">BACKLOG</span>
+                    <span class="card-title white-text">{{ name }}</span>
                     <div class="card-content">
 
-                        <div class="card">
-                            <span class="card-title">Jupiter API</span>
+                        {{# each items }}
+						<div class="card">
+                            <span class="card-title">{{ name }}</span>
                             <div class="card-content">
-                                <blockquote>REST API platform to serve multiple mobile and hardware clients to be
-                                    integrated as an enterprise ERP system.
-                                </blockquote>
-                                <p>Related technologies: Node.js, express.js, Ionic Framework, AngularJS, Arduino</p>
+                                <blockquote>{{ description }}</blockquote>
+                                <p>{{ stack }}</p>
                             </div>
                         </div>
+						{{/each}}
 
                     </div>
                 </div>
             </div>
 
-            <!-- In Progress -->
-            <div class="col s12 m4">
-                <div class="card">
-                    <span class="card-title">IN PROGRESS</span>
-                    <div class="card-content">
-                        <div class="card">
-                            <span class="card-title">Jupiter API</span>
-                            <div class="card-content">
-                                <blockquote>REST API platform to serve multiple mobile and hardware clients to be
-                                    integrated as an enterprise ERP system.
-                                </blockquote>
-                                <p>Related technologies: Node.js, express.js, Ionic Framework, AngularJS, Arduino</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			{{/each}}
 
-            <!-- Done -->
-            <div class="col s12 m4">
-                <div class="card">
-                    <span class="card-title">DONE</span>
-                    <div class="card-content">
-                        <div class="card">
-                            <span class="card-title">Jupiter API</span>
-                            <div class="card-content">
-                                <blockquote>REST API platform to serve multiple mobile and hardware clients to be
-                                    integrated as an enterprise ERP system.
-                                </blockquote>
-                                <p>Related technologies: Node.js, express.js, Ionic Framework, AngularJS, Arduino</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!--&lt;!&ndash; In Progress &ndash;&gt;-->
+            <!--<div class="col s12 m4">-->
+                <!--<div class="card">-->
+                    <!--<span class="card-title">IN PROGRESS</span>-->
+                    <!--<div class="card-content">-->
+                        <!--<div class="card">-->
+                            <!--<span class="card-title">Jupiter API</span>-->
+                            <!--<div class="card-content">-->
+                                <!--<blockquote>REST API platform to serve multiple mobile and hardware clients to be-->
+                                    <!--integrated as an enterprise ERP system.-->
+                                <!--</blockquote>-->
+                                <!--<p>Related technologies: Node.js, express.js, Ionic Framework, AngularJS, Arduino</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Done &ndash;&gt;-->
+            <!--<div class="col s12 m4">-->
+                <!--<div class="card">-->
+                    <!--<span class="card-title">DONE</span>-->
+                    <!--<div class="card-content">-->
+                        <!--<div class="card">-->
+                            <!--<span class="card-title">Jupiter API</span>-->
+                            <!--<div class="card-content">-->
+                                <!--<blockquote>REST API platform to serve multiple mobile and hardware clients to be-->
+                                    <!--integrated as an enterprise ERP system.-->
+                                <!--</blockquote>-->
+                                <!--<p>Related technologies: Node.js, express.js, Ionic Framework, AngularJS, Arduino</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
         </div>
     </div>
