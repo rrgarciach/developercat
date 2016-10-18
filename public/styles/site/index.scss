@@ -10,6 +10,14 @@
 	background-size: cover;
 	background-position: center;
   }
+  
+  #me {
+	background-image: url("../../images/me.jpg");
+	background-size: cover;
+	background-position: top;
+	height: 100%;
+	width: 200px;
+  }
 
   .board {
 	.card-title {
@@ -21,7 +29,8 @@
 	height: 250px;
   }
 
-  p {
+  p,
+  blockquote {
 	text-align: justify;
   }
 
