@@ -11,12 +11,17 @@
 	background-position: center;
 	
 	.carousel-item {
-	  //margin-top: 5em;
 	  h1 {
 		font-size: 3em;
 	  }
 	}
 	
+  }
+  
+  .logo-title {
+	height: 3em;
+	float: left;
+	margin: 5px 5px 0 0;
   }
   
   #me {

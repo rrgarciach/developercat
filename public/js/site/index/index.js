@@ -2,6 +2,6 @@
 
 $('.carousel.carousel-slider').carousel({full_width: true});
 
-setInterval(() => {
-	$('.carousel').carousel('next');
-}, 6000);
+// setInterval(() => {
+// 	$('.carousel').carousel('next');
+// }, 6000);
