@@ -59,7 +59,7 @@
             </div>
 			{{# each whatIDo}}
             <div class="col s12 m6">
-                <div class="card">
+                <div class="card hoverable">
                     <div class="card-image">
                         <img src="images/{{ image }}">
                         <span class="card-title">{{ title }}</span>
@@ -90,12 +90,12 @@
             <!-- Backlog -->
 			{{# each projects }}
             <div class="col s12 m4">
-                <div class="card blue-grey lighten-3">
+                <div class="card blue-grey lighten-3 hoverable">
                     <div class="card-content">
                     <span class="card-title white-text">{{ name }}</span>
 
                         {{# each items }}
-						<div class="card">
+						<div class="card hoverable">
                             <div class="card-content">
                             	<span class="card-title">{{ name }}</span>
                                 <blockquote>{{ description }}</blockquote>
@@ -160,7 +160,7 @@
             <div class="col s12">
                 <img src="images/logo-navbar.png" class="logo-title">
 				<h4 class="header">Let's Talk About Your Next Project!</h4>
-                <div class="card horizontal">
+                <div class="card horizontal hoverable">
                     <div class="card-image hide-on-small-only">
 						<div id="form-image"></div>
                     </div>
