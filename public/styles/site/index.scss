@@ -6,9 +6,17 @@
 
   .carousel-slider {
 	height: 650px;
-	background-image: url("../../images/carrousel/01.jpg");
+	background-image: url("../../images/carrousel/bkgr-gray.jpg");
 	background-size: cover;
 	background-position: center;
+	
+	.carousel-item {
+	  //margin-top: 5em;
+	  h1 {
+		font-size: 3em;
+	  }
+	}
+	
   }
   
   #me {

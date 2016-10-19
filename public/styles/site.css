@@ -12806,9 +12806,11 @@ footer.page-footer {
 
 #index .carousel-slider {
   height: 650px;
-  background-image: url("../../images/carrousel/01.jpg");
+  background-image: url("../../images/carrousel/bkgr-gray.jpg");
   background-size: cover;
   background-position: center; }
+  #index .carousel-slider .carousel-item h1 {
+    font-size: 3em; }
 
 #index #me {
   background-image: url("../../images/me.jpg");
