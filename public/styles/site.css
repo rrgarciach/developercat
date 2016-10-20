@@ -12812,6 +12812,12 @@ footer.page-footer {
   #index .carousel-slider .carousel-item h1 {
     font-size: 3em; }
 
+#index .tall {
+  height: 100%; }
+
+#index .card-content.description p {
+  margin-bottom: 1em; }
+
 #index .logo-title {
   height: 3em;
   float: left;

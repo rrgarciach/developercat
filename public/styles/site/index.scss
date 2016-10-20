@@ -17,6 +17,14 @@
 	}
 	
   }
+
+  .card-content{
+	&.description {
+	  p {
+		margin-bottom: 1em;
+	  }
+	}
+  }
   
   .logo-title {
 	height: 3em;
