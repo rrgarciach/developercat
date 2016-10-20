@@ -2,30 +2,22 @@
 <div id="index">
     <div class="carousel carousel-slider center" data-indicators="true">
         <video autoplay="" loop="" muted="">
-            <source src="http://touchtitans.com/wp-content/uploads/2014/11/video-background.mp4" type="video/mp4">
-            <source src="http://touchtitans.com/wp-content/uploads/2014/11/video-background.webm" type="video/webm">
-            <source src="http://touchtitans.com/wp-content/uploads/2014/11/video-background.ogv" type="video/ogg">
+            <!--<source src="http://touchtitans.com/wp-content/uploads/2014/11/video-background.mp4" type="video/mp4">-->
+            <!--<source src="http://touchtitans.com/wp-content/uploads/2014/11/video-background.webm" type="video/webm">-->
+            <!--<source src="http://touchtitans.com/wp-content/uploads/2014/11/video-background.ogv" type="video/ogg">-->
         </video>
-        <div class="carousel-item white-text" href="#two!">
-            <h1>{{ whatIDo }}</h1>
-        </div>
-        <div class="carousel-item white-text" href="#three!">
-            <h1>A software developer begins a project by coding,
-                but a software engineer begins a project by designing.</h1>
-        </div>
-        <div class="carousel-item white-text" href="#four!">
-            <h2>Fourth Panel</h2>
-            <p class="white-text">This is your fourth panel</p>
+        <div class="carousel-item white-text">
+            <h1>A software developer begins a project by coding first,</h1>
+			<h1>a <span class="yellow black-text">software engineer</span> begins by designing first.</h1>
         </div>
     </div>
 
     <!-- Who am I -->
     <div class="section white">
         <div class="row container">
-            <div class="col s12">
-                <h4 class="header">Who Am I</h4>
-            </div>
-            <div class="col s10">
+            <div class="col">
+                <img src="images/logo-navbar.png" class="logo-title">
+				<h4 class="header">Who Am I</h4>
                 <div class="card horizontal hoverable">
                     <div class="card-image hide-on-small-only">
                         <div id="me"></div>
@@ -62,20 +54,21 @@
     <div class="section white">
         <div class="row container">
             <div class="col s12">
+                <img src="images/logo-navbar.png" class="logo-title">
                 <h4>What I Do</h4>
             </div>
 			{{# each whatIDo}}
-            <div class="col s12 m6">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/{{ image }}">
-                        <span class="card-title">{{ title }}</span>
-                    </div>
-                    <div class="card-content">
-                        <p>{{ description }}</p>
-                    </div>
-                </div>
-            </div>
+				<div class="col s12 m6">
+					<div class="card hoverable">
+						<div class="card-image">
+							<img src="images/{{ image }}">
+							<span class="card-title">{{ title }}</span>
+						</div>
+						<div class="card-content description">
+							{{{ description }}}
+						</div>
+					</div>
+				</div>
 			{{/each}}
         </div>
     </div>
@@ -86,71 +79,36 @@
     </div>
 
     <!-- Projects -->
-    <div class="section white board">
+    <div id="board" class="section white">
         <div class="row">
             <div class="col s12">
-                <h4>Projects</h4>
+                <img src="images/logo-navbar.png" class="logo-title">
+                <h4 class="header">Projects</h4>
+				<blockquote>I like to have projects</blockquote>
             </div>
 
             <!-- Backlog -->
 			{{# each projects }}
-            <div class="col s12 m4">
-                <div class="card blue-grey lighten-3">
-                    <span class="card-title white-text">{{ name }}</span>
-                    <div class="card-content">
-
-                        {{# each items }}
-						<div class="card">
-                            <span class="card-title">{{ name }}</span>
-                            <div class="card-content">
-                                <blockquote>{{ description }}</blockquote>
-                                <p>{{ stack }}</p>
-                            </div>
-                        </div>
-						{{/each}}
-
-                    </div>
-                </div>
-            </div>
-
+					<div class="col s12 m4">
+						<div class="card blue-grey lighten-3 hoverable">
+							<div class="card-content">
+								<span class="card-title white-text">{{ name }}</span>
+		
+								{{# each items }}
+								<div class="card hoverable">
+									<div class="card-content">
+										<span class="card-title">{{ name }}</span>
+										<blockquote>{{ description }}</blockquote>
+										<p>{{ stack }}</p>
+									</div>
+								</div>
+								{{/each}}
+		
+							</div>
+						</div>
+					</div>
 			{{/each}}
-
-            <!--&lt;!&ndash; In Progress &ndash;&gt;-->
-            <!--<div class="col s12 m4">-->
-                <!--<div class="card">-->
-                    <!--<span class="card-title">IN PROGRESS</span>-->
-                    <!--<div class="card-content">-->
-                        <!--<div class="card">-->
-                            <!--<span class="card-title">Jupiter API</span>-->
-                            <!--<div class="card-content">-->
-                                <!--<blockquote>REST API platform to serve multiple mobile and hardware clients to be-->
-                                    <!--integrated as an enterprise ERP system.-->
-                                <!--</blockquote>-->
-                                <!--<p>Related technologies: Node.js, express.js, Ionic Framework, AngularJS, Arduino</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash; Done &ndash;&gt;-->
-            <!--<div class="col s12 m4">-->
-                <!--<div class="card">-->
-                    <!--<span class="card-title">DONE</span>-->
-                    <!--<div class="card-content">-->
-                        <!--<div class="card">-->
-                            <!--<span class="card-title">Jupiter API</span>-->
-                            <!--<div class="card-content">-->
-                                <!--<blockquote>REST API platform to serve multiple mobile and hardware clients to be-->
-                                    <!--integrated as an enterprise ERP system.-->
-                                <!--</blockquote>-->
-                                <!--<p>Related technologies: Node.js, express.js, Ionic Framework, AngularJS, Arduino</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
+			
         </div>
     </div>
 
@@ -163,17 +121,16 @@
     <div id="contact" class="section white board">
         <div class="row container">
             <div class="col s12">
-                <div class="card horizontal">
+                <img src="images/logo-navbar.png" class="logo-title">
+				<h4 class="header">Let's Talk About Your Next Project!</h4>
+                <div class="card horizontal hoverable">
                     <div class="card-image hide-on-small-only">
 						<div id="form-image"></div>
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
-                            <div class="card-title">
-                                <h5 class="header">Let's Talk About Your Next Project!</h5>
-                            </div>
+                            <div class="card-title"></div>
                             <div class="row">
-								
                                 <form class="col s12">
                                     <div class="row">
                                         <div class="input-field col s12">
