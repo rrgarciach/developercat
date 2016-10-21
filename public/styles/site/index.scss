@@ -6,23 +6,38 @@
 
   .carousel-slider {
 	height: 650px;
-	background-image: url("../../images/carrousel/01.jpg");
+	background-image: url("../../images/carrousel/bkgr-gray.jpg");
 	background-size: cover;
 	background-position: center;
+	
+	.carousel-item {
+	  h1 {
+		font-size: 3em;
+	  }
+	}
+	
+  }
+
+  .card-content{
+	&.description {
+	  p {
+		margin-bottom: 1em;
+	  }
+	}
+  }
+  
+  .logo-title {
+	height: 3em;
+	float: left;
+	margin: 5px 5px 0 0;
   }
   
   #me {
 	background-image: url("../../images/me.jpg");
-	background-size: cover;
-	background-position: top;
+	background-position: top right;
+	background-repeat: no-repeat;
 	height: 100%;
 	width: 200px;
-  }
-
-  .board {
-	.card-title {
-	  margin-left: 1em;
-	}
   }
 
   .parallax-container {
