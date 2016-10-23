@@ -12857,6 +12857,6 @@ footer.page-footer {
   #about-me .logo-title {
     height: 2em;
     float: left;
-    margin: 20px 5px 0 0; }
+    margin-right: 5px; }
   #about-me blockquote {
     text-align: justify; }
