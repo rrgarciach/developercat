@@ -1,6 +1,6 @@
 {{!< default}}
 <div id="index">
-	
+
     <div class="carousel carousel-slider center" data-indicators="true">
         <video autoplay="" loop="" muted="">
             <!--<source src="http://touchtitans.com/wp-content/uploads/2014/11/video-background.mp4" type="video/mp4">-->
@@ -9,7 +9,7 @@
         </video>
         <div class="carousel-item white-text">
             <h1>A software developer begins a project by coding first,</h1>
-			<h1>a <span class="yellow black-text">software engineer</span> begins by designing first.</h1>
+            <h1>a <span class="yellow black-text">software engineer</span> begins by designing first.</h1>
         </div>
     </div>
 
@@ -19,23 +19,26 @@
             <div class="col">
                 <div>
                     <img src="images/logo-navbar.png" class="logo-title">
-					<h4 class="header">Who Am I</h4>
+                    <h4 class="header">Who Am I</h4>
                 </div>
                 <div class="card hoverable">
                     <div class="card-content">
                         <span class="card-title">Ruy R. Garcia</span>
                         <h5>Software Engineer</h5>
                         <blockquote>
-                            I’m a passionate about technology who is always looking for new tools and skills in
-                            order to be able to achieve and do more everyday. I firmly believe in research, design,
-                            structure and plan every project in order to meet its requirements and achieve its
-                            goals.
+                            Since I have memory I've been deeply interested on science and technology and as the time
+                            has been passing by, this has become into my passion and profession. In some moment of my
+                            career I discovered and embraced engineering as the main tool to achieve new technology and
+                            knowledge, this due that engineering means an ordered, methodic and planned way of "assemble
+                            something new", just like an artist take different colors of paint into a canvas to turn it
+                            into a picture, engineering means taking different components of a universe (real or
+                            virtual) and turning all these together into something new, a platform, an application or an
+                            IoT device.
                             <br>
                             <br>
-                            I have solid experience on Web development with JavaScript technologies such as Node.js,
-                            AngularJS, Ionic Framework and Angular2 as well as other related Web technologies like
-                            PHP. I also have experience with Web Services and REST API (SaaS architectures) design
-                            and development as well as with IoT prototype projects using Arduino and ESP8266 boards.
+                            I'm always looking for the next project that will require and demand more from me; the next
+                            challenge. Some come in the form of a mobile application, others as a Web browser SPA and
+                            others as a high level architecture of an entire system environment.
                         </blockquote>
                     </div>
                 </div>
@@ -54,10 +57,10 @@
             <div class="col s12">
                 <div>
                     <img src="images/logo-navbar.png" class="logo-title">
-                	<h4>What I Do</h4>
+                    <h4>What I Do</h4>
                 </div>
             </div>
-			{{# each whatIDo}}
+			{{# each whatIDo as |item index|}}
 				<div class="col s12 m6">
 					<div class="card hoverable">
 						<div class="card-image">
@@ -84,33 +87,35 @@
             <div class="col s12">
                 <div>
                     <img src="images/logo-navbar.png" class="logo-title">
-                	<h4 class="header">Projects</h4>
+                    <h4 class="header">Projects</h4>
                 </div>
-				<blockquote>I like to have projects</blockquote>
+                <blockquote> I'm always looking for the next project that will require and demand more from me; the next
+                    challenge. Some come in the form of a mobile application, others as a Web browser SPA and
+                    others as a high level architecture of an entire system environment.</blockquote>
             </div>
 
-            <!-- Backlog -->
+            <!-- Project's Columns -->
 			{{# each projects }}
-					<div class="col s12 m4">
-						<div class="card blue-grey lighten-3 hoverable">
-							<div class="card-content">
-								<span class="card-title white-text">{{ name }}</span>
-		
-								{{# each items }}
-								<div class="card hoverable">
-									<div class="card-content">
-										<span class="card-title">{{ name }}</span>
-										<blockquote>{{ description }}</blockquote>
-										<p>{{ stack }}</p>
-									</div>
-								</div>
-								{{/each}}
-		
-							</div>
-						</div>
-					</div>
+                <div class="col s12 m4">
+                    <div class="card blue-grey lighten-3 hoverable">
+                        <div class="card-content">
+                            <span class="card-title white-text">{{ name }}</span>
+
+							{{# each items }}
+                                <div class="card hoverable">
+                                    <div class="card-content">
+                                        <span class="card-title">{{ name }}</span>
+                                        <blockquote>{{ description }}</blockquote>
+                                        <p>{{ stack }}</p>
+                                    </div>
+                                </div>
+							{{/each}}
+
+                        </div>
+                    </div>
+                </div>
 			{{/each}}
-			
+
         </div>
     </div>
 
@@ -120,84 +125,85 @@
     </div>
 
     <!-- Contact form -->
-    <div id="contact" class="section white board">
+    <!--<div id="contact" class="section white board">-->
+        <!--<div class="row container">-->
+            <!--<div class="col s12">-->
+                <!--<div>-->
+                    <!--<img src="images/logo-navbar.png" class="logo-title">-->
+                    <!--<h4 class="header">Let's Talk About Your Next Project!</h4>-->
+                <!--</div>-->
+                <!--<div class="card horizontal hoverable">-->
+                    <!--<div class="card-image hide-on-small-only">-->
+                        <!--<div id="form-image"></div>-->
+                    <!--</div>-->
+                    <!--<div class="card-stacked">-->
+                        <!--<div class="card-content">-->
+                            <!--<div class="card-title"></div>-->
+                            <!--<div class="row">-->
+                                <!--<form class="col s12">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="input-field col s12">-->
+                                            <!--<i class="material-icons prefix">account_circle</i>-->
+                                            <!--<input id="name" type="text" class="validate">-->
+                                            <!--<label for="name">Name</label>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="input-field col s12">-->
+                                            <!--<i class="material-icons prefix">business</i>-->
+                                            <!--<input id="company" type="text" class="validate">-->
+                                            <!--<label for="company">Company</label>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="input-field col s12">-->
+                                            <!--<i class="material-icons prefix">mail</i>-->
+                                            <!--<input id="email" type="email" class="validate">-->
+                                            <!--<label for="email">Email</label>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="input-field col s12">-->
+                                            <!--<i class="material-icons prefix">call</i>-->
+                                            <!--<input id="phone" type="tel" class="validate">-->
+                                            <!--<label for="phone">Phone</label>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="input-field col s12">-->
+                                            <!--<i class="material-icons prefix">subject</i>-->
+                                            <!--<input id="subject" type="email" class="validate">-->
+                                            <!--<label for="subject">Subject</label>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="input-field col s12">-->
+                                            <!--<i class="material-icons prefix">message</i>-->
+                                            <!--<textarea id="message" class="materialize-textarea"></textarea>-->
+                                            <!--<label for="message">Message</label>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col offset-s6">-->
+                                            <!--<a class="waves-effect waves-light btn"><i-->
+                                                    <!--class="material-icons right">send</i>submit</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
         <div class="row container">
-            <div class="col s12">
-                <div>
-                    <img src="images/logo-navbar.png" class="logo-title">
-					<h4 class="header">Let's Talk About Your Next Project!</h4>
-                </div>
-                <div class="card horizontal hoverable">
-                    <div class="card-image hide-on-small-only">
-						<div id="form-image"></div>
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <div class="card-title"></div>
-                            <div class="row">
-                                <form class="col s12">
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">account_circle</i>
-                                            <input id="name" type="text" class="validate">
-                                            <label for="name">Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">business</i>
-                                            <input id="company" type="text" class="validate">
-                                            <label for="company">Company</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">mail</i>
-                                            <input id="email" type="email" class="validate">
-                                            <label for="email">Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">call</i>
-                                            <input id="phone" type="tel" class="validate">
-                                            <label for="phone">Phone</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">subject</i>
-                                            <input id="subject" type="email" class="validate">
-                                            <label for="subject">Subject</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">message</i>
-                                            <textarea id="message" class="materialize-textarea"></textarea>
-                                            <label for="message">Message</label>
-                                        </div>
-                                    </div>
-									<div class="row">
-										<div class="col offset-s6">
-                                        	<a class="waves-effect waves-light btn"><i class="material-icons right">send</i>submit</a>
-										</div>
-									</div>
-                                </form>
-								
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col">
+                <p>Yes, I really love cats.</p>
             </div>
         </div>
 
-        <div class="row container">
-			<div class="col">
-				<p>btw... I really love cats.</p>
-			</div>
-		</div>
-		
     </div>
-	
+
 </div>

@@ -12841,6 +12841,11 @@ footer.page-footer {
     background-position: center;
     height: 100%; }
 
+@media screen and (min-width: 992px) {
+  #index #board {
+    padding-left: 5em;
+    padding-right: 5em; } }
+
 #index form .row {
   margin-bottom: 0; }
 

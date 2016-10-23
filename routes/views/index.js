@@ -10,17 +10,17 @@ exports = module.exports = function (req, res) {
 	locals.section = 'home';
 
 	locals.whatIDo = [
-		{
-			title: 'Product Definition',
-			image: 'product-definition.jpg',
-			description: `<p>Turning a bright idea into a real product is not an easy task, it requires a diligent effort 
-			in order to translate all the business logic needs into technical features.</p>
-			<p>Define a product implies the discovery of features as well as to know how to translate those features in
-			technological tools.</p>
-			<p>Through my yeas of experience as consultant in different companies and as freelance, I have helped to turn 
-			bright ideas into real and profitable products for different industries such health care, domotics, 
-			automotive and commerce.</p>`
-		},
+		// {
+		// 	title: 'Product Definition',
+		// 	image: 'product-definition.jpg',
+		// 	description: `<p>Turning a bright idea into a real product is not an easy task, it requires a diligent effort 
+		// 	in order to translate all the business logic needs into technical features.</p>
+		// 	<p>Define a product implies the discovery of features as well as to know how to translate those features in
+		// 	technological tools.</p>
+		// 	<p>Through my yeas of experience as consultant in different companies and as freelance, I have helped to turn 
+		// 	bright ideas into real and profitable products for different industries such health care, domotics, 
+		// 	automotive and commerce.</p>`
+		// },
 		{
 			title: 'Technical Management',
 			image: 'technical-management.jpg',
@@ -42,7 +42,7 @@ exports = module.exports = function (req, res) {
 			platforms helping products to become into valuable products.</p>`
 		},
 		{
-			title: 'Software/Web Engineering',
+			title: 'Software Engineering',
 			image: 'software-development.jpg',
 			description: `<p>A software developer begins a project by coding first, a software engineer begins by 
 			designing first.</p>
