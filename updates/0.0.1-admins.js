@@ -7,9 +7,11 @@
  * module.exports = function(done) { ... }
  */
 
+let adminPassword = process.env.ADMIN_PASSWORD || 'admin';
+
 exports.create = {
 	User: [
-		{ 'name.first': 'Admin', 'name.last': 'User', 'email': 'rrgarciach@gmail.com', 'password': 'admin', 'isAdmin': true },
+		{ 'name.first': 'Admin', 'name.last': 'User', 'email': 'rrgarciach@gmail.com', 'password': adminPassword, 'isAdmin': true },
 	],
 };
 
