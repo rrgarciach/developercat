@@ -14,6 +14,11 @@ body {
 
 main {
   flex: 1 0 auto;
+
+  div.section {
+	background-image: url('../../images/cats-bkgr.jpg');
+  }
+  
 }
 
 footer {

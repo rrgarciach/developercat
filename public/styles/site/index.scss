@@ -1,9 +1,5 @@
 #index {
   
-  div.section {
-  	background-image: url('../../images/cats-bkgr.jpg');
-  }
-
   .carousel-slider {
 	height: 650px;
 	background-image: url("../../images/carrousel/bkgr-gray.jpg");
@@ -27,9 +23,9 @@
   }
   
   .logo-title {
-	height: 3em;
+	height: 2em;
 	float: left;
-	margin: 5px 5px 0 0;
+	margin-right: 5px;
   }
   
   #me {
@@ -62,11 +58,18 @@
 	  }
 	}
   }
+  
+  @media screen and (min-width: 992px){
+	#board {
+	  padding-left: 5em;
+	  padding-right: 5em;
+	}
+  }
 
   form {
 	.row {
 	  margin-bottom: 0;
 	}
   }
-
+  
 }
