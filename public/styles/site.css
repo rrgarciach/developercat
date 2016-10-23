@@ -12844,19 +12844,25 @@ footer.page-footer {
 #index form .row {
   margin-bottom: 0; }
 
-#about-me {
-  background-color: red; }
-  #about-me #me {
-    background-image: url("../../images/avatar.jpg");
-    background-position: center center;
-    background-size: contain;
-    height: 10em;
-    width: 10em;
-    border-radius: 100%;
-    margin: 1em; }
-  #about-me .logo-title {
-    height: 2em;
-    float: left;
-    margin-right: 5px; }
-  #about-me blockquote {
-    text-align: justify; }
+#about-me .card-image img {
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  margin: 2em; }
+
+#about-me #me {
+  background-image: url("../../images/avatar.jpg");
+  background-position: center center;
+  background-size: contain;
+  height: 10em;
+  width: 10em;
+  border-radius: 100%;
+  margin: 1em; }
+
+#about-me .logo-title {
+  height: 2em;
+  float: left;
+  margin-right: 5px; }
+
+#about-me blockquote {
+  text-align: justify; }

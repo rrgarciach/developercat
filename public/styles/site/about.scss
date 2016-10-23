@@ -1,5 +1,13 @@
 #about-me {
-  background-color: red;
+  
+  .card-image {
+	img {
+	  height: 5em;
+	  width: 5em;
+	  border-radius: 50%;
+	  margin: 2em;
+	}
+  }
   
   #me {
 	background-image: url("../../images/avatar.jpg");
