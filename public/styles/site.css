@@ -12817,7 +12817,7 @@ footer.page-footer {
 #index .logo-title {
   height: 2em;
   float: left;
-  margin: 20px 5px 0 0; }
+  margin-right: 5px; }
 
 #index #me {
   background-image: url("../../images/me.jpg");
