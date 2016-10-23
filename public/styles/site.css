@@ -12792,6 +12792,8 @@ body {
 
 main {
   flex: 1 0 auto; }
+  main div.section {
+    background-image: url("../../images/cats-bkgr.jpg"); }
 
 footer.page-footer {
   margin-top: 0; }
@@ -12801,9 +12803,6 @@ footer.page-footer {
   max-width: 100%;
   height: auto; }
 
-#index div.section {
-  background-image: url("../../images/cats-bkgr.jpg"); }
-
 #index .carousel-slider {
   height: 650px;
   background-image: url("../../images/carrousel/bkgr-gray.jpg");
@@ -12811,9 +12810,6 @@ footer.page-footer {
   background-position: center; }
   #index .carousel-slider .carousel-item h1 {
     font-size: 3em; }
-
-#index .tall {
-  height: 100%; }
 
 #index .card-content.description p {
   margin-bottom: 1em; }
@@ -12847,3 +12843,20 @@ footer.page-footer {
 
 #index form .row {
   margin-bottom: 0; }
+
+#about-me {
+  background-color: red; }
+  #about-me #me {
+    background-image: url("../../images/avatar.jpg");
+    background-position: center center;
+    background-size: contain;
+    height: 10em;
+    width: 10em;
+    border-radius: 100%;
+    margin: 1em; }
+  #about-me .logo-title {
+    height: 2em;
+    float: left;
+    margin: 20px 5px 0 0; }
+  #about-me blockquote {
+    text-align: justify; }

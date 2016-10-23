@@ -1,0 +1,24 @@
+#about-me {
+  background-color: red;
+  
+  #me {
+	background-image: url("../../images/avatar.jpg");
+	background-position: center center;
+	background-size: contain;
+	height: 10em;
+	width: 10em;
+	border-radius: 100%;
+	margin: 1em;
+  }
+
+  .logo-title {
+	height: 2em;
+	float: left;
+	margin: 20px 5px 0 0;
+  }
+  
+  blockquote {
+	text-align: justify;
+  }
+  
+}
