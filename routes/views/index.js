@@ -17,9 +17,9 @@ exports = module.exports = function (req, res) {
 			in order to translate all the business logic needs into technical features.</p>
 			<p>Define a product implies the discovery of features as well as to know how to translate those features in
 			technological tools.</p>
-			<p>Through my yeas of experience as consultant in different companies and as freelance, I have helped to turn 
+			<blockquote>Through my yeas of experience as consultant in different companies and as freelance, I have helped to turn 
 			bright ideas into real and profitable products for different industries such health care, domotics, 
-			automotive and commerce.</p>`
+			automotive and commerce.</blockquote>`
 		},
 		{
 			title: 'Technical Management',
@@ -29,8 +29,8 @@ exports = module.exports = function (req, res) {
 			<p>Taking a project up to become a real and valuable product requires a persevering Technical Management that 
 			takes cares of the technical architecture and quality at the same time that it keeps it sights on the 
 			product's goals and targets.</p>
-			<p>As Technical Manager I've participated leading projects aiming to meet both technical and business
-			requirements.</p>`
+			<blockquote>As Technical Manager I've participated leading projects aiming to meet both technical and business
+			requirements.</blockquote>`
 		},
 		{
 			title: 'Software Architecture/Design',
@@ -38,8 +38,8 @@ exports = module.exports = function (req, res) {
 			description: `<p>Did you say "microservices" or "Web components"?</p>
 			<p>Turn a list of requirements and specifications into a reliable and valuable product requires
 			an exhaustive and intelligent design in order to achieve quality, scalability, maintainability and stability.</p>
-			<p>During the last years I've been involved in the passionate task of designing Software applications and 
-			platforms helping products to become into valuable products.</p>`
+			<blockquote>During the last years I've been involved in the passionate task of designing Software applications and 
+			platforms helping products to become into valuable products.</blockquote>`
 		},
 		{
 			title: 'Software Engineering',
@@ -48,9 +48,9 @@ exports = module.exports = function (req, res) {
 			designing first.</p>
 			<p>Design patterns, standards, conventions, unit testing are just few of the targets of every decent
 			Software Engineer.</p>
-			<p>With five years of experience as Software Engineer I've participated in multiple projects of diverse 
+			<blockquote>With five years of experience as Software Engineer I've participated in multiple projects of diverse 
 			architectures and platforms such as EMR (Electronic Medical Records), ERP (Enterprise Resource Planning), 
-			CRM (Customer Relationship Management), CMS (Content Management System) Etc.</p>`
+			CRM (Customer Relationship Management), CMS (Content Management System) Etc.</blockquote>`
 		},
 		{
 			title: 'Hybrid Mobile Development',
@@ -59,15 +59,15 @@ exports = module.exports = function (req, res) {
 			Frontend technologies, hybrid mobile applications are taking the stage of mobile development.</p>
 			<p>An hybrid mobile application allows to achieve presence in mobile platforms in record times with proven
 			performance and qualify by developing once and deploying in multiple platforms.</p>
-			<p>During the last five years I've been developing mobile applications for iOS and Android platforms for
-			multiple purposes such as SaaS (Software as a Service) platforms and hardware connectivity (Internet of Things projects).</p>`
+			<blockquote>During the last five years I've been developing mobile applications for iOS and Android platforms for
+			multiple purposes such as SaaS (Software as a Service) platforms and hardware connectivity (Internet of Things projects).</blockquote>`
 		},
 		{
 			title: 'Fight Crime at Nights',
 			image: 'fight-crime.jpg',
 			description: `<p>And why not? After all listed above, why not also be taking some free time at nights to fight crime from
 			the streets under the name of "El gato justiciero".</p>
-			<p>A Software Engineer during the day... A fighter of justice at nights.</p>`
+			<blockquote>A Software Engineer during the day... A fighter of justice at nights.</blockquote>`
 		},
 	];
 
