@@ -1,5 +1,6 @@
 {{!< default}}
 <div id="index">
+
     <div class="carousel carousel-slider center" data-indicators="true">
         <video autoplay="" loop="" muted="">
             <!--<source src="http://touchtitans.com/wp-content/uploads/2014/11/video-background.mp4" type="video/mp4">-->
@@ -8,7 +9,7 @@
         </video>
         <div class="carousel-item white-text">
             <h1>A software developer begins a project by coding first,</h1>
-			<h1>a <span class="yellow black-text">software engineer</span> begins by designing first.</h1>
+            <h1>a <span class="yellow black-text">software engineer</span> begins by designing first.</h1>
         </div>
     </div>
 
@@ -16,29 +17,29 @@
     <div class="section white">
         <div class="row container">
             <div class="col">
-                <img src="images/logo-navbar.png" class="logo-title">
-				<h4 class="header">Who Am I</h4>
-                <div class="card horizontal hoverable">
-                    <div class="card-image hide-on-small-only">
-                        <div id="me"></div>
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-							<span class="card-title">Ruy R. Garcia</span>
-							<h5>Software Engineer</h5>
-                            <blockquote>
-                                I’m a passionate about technology who is always looking for new tools and skills in
-                                order to be able to achieve and do more everyday. I firmly believe in research, design,
-                                structure and plan every project in order to meet its requirements and achieve its
-                                goals.
-								<br>
-								<br>
-                                I have solid experience on Web development with JavaScript technologies such as Node.js,
-                                AngularJS, Ionic Framework and Angular2 as well as other related Web technologies like
-                                PHP. I also have experience with Web Services and REST API (SaaS architectures) design
-                                and development as well as with IoT prototype projects using Arduino and ESP8266 boards.
-                            </blockquote>
-                        </div>
+                <div>
+                    <img src="images/logo-navbar.png" class="logo-title">
+                    <h4 class="header">Who Am I</h4>
+                </div>
+                <div class="card hoverable">
+                    <div class="card-content">
+                        <span class="card-title">Ruy R. Garcia</span>
+                        <h5>Software Engineer</h5>
+                        <blockquote>
+                            Since I have memory I've been deeply interested on science and technology and as the time
+                            has been passing by, this has become into my passion and profession. In some moment of my
+                            career I discovered and embraced engineering as the main tool to achieve new technology and
+                            knowledge, this due that engineering means an ordered, methodic and planned way of "assemble
+                            something new", just like an artist take different colors of paint into a canvas to turn it
+                            into a picture, engineering means taking different components of a universe (real or
+                            virtual) and turning all these together into something new, a platform, an application or an
+                            IoT device.
+                            <br>
+                            <br>
+                            I'm always looking for the next project that will require and demand more from me; the next
+                            challenge. Some come in the form of a mobile application, others as a Web browser SPA and
+                            others as a high level architecture of an entire system environment.
+                        </blockquote>
                     </div>
                 </div>
             </div>
@@ -51,16 +52,18 @@
     </div>
 
     <!-- What I Do -->
-    <div class="section white">
+    <div id="what-i-do" class="section white">
         <div class="row container">
             <div class="col s12">
-                <img src="images/logo-navbar.png" class="logo-title">
-                <h4>What I Do</h4>
+                <div>
+                    <img src="images/logo-navbar.png" class="logo-title">
+                    <h4>What I Do</h4>
+                </div>
             </div>
-			{{# each whatIDo}}
-				<div class="col s12 m6">
+			{{# each whatIDo as |item index|}}
+				<div class="col s12 m6 activity-card">
 					<div class="card hoverable">
-						<div class="card-image">
+						<div class="card-image title">
 							<img src="images/{{ image }}">
 							<span class="card-title">{{ title }}</span>
 						</div>
@@ -82,33 +85,37 @@
     <div id="board" class="section white">
         <div class="row">
             <div class="col s12">
-                <img src="images/logo-navbar.png" class="logo-title">
-                <h4 class="header">Projects</h4>
-				<blockquote>I like to have projects</blockquote>
+                <div>
+                    <img src="images/logo-navbar.png" class="logo-title">
+                    <h4 class="header">Projects</h4>
+                </div>
+                <blockquote> I'm always looking for the next project that will require and demand more from me; the next
+                    challenge. Some come in the form of a mobile application, others as a Web browser SPA and
+                    others as a high level architecture of an entire system environment.</blockquote>
             </div>
 
-            <!-- Backlog -->
+            <!-- Project's Columns -->
 			{{# each projects }}
-					<div class="col s12 m4">
-						<div class="card blue-grey lighten-3 hoverable">
-							<div class="card-content">
-								<span class="card-title white-text">{{ name }}</span>
-		
-								{{# each items }}
-								<div class="card hoverable">
-									<div class="card-content">
-										<span class="card-title">{{ name }}</span>
-										<blockquote>{{ description }}</blockquote>
-										<p>{{ stack }}</p>
-									</div>
-								</div>
-								{{/each}}
-		
-							</div>
-						</div>
-					</div>
+                <div class="col s12 m4">
+                    <div class="card blue-grey lighten-3 hoverable">
+                        <div class="card-content">
+                            <span class="card-title white-text">{{ name }}</span>
+
+							{{# each items }}
+                                <div class="card hoverable">
+                                    <div class="card-content">
+                                        <span class="card-title">{{ name }}</span>
+                                        <blockquote>{{ description }}</blockquote>
+                                        <p>{{ stack }}</p>
+                                    </div>
+                                </div>
+							{{/each}}
+
+                        </div>
+                    </div>
+                </div>
 			{{/each}}
-			
+
         </div>
     </div>
 
@@ -121,11 +128,13 @@
     <!--<div id="contact" class="section white board">-->
         <!--<div class="row container">-->
             <!--<div class="col s12">-->
-                <!--<img src="images/logo-navbar.png" class="logo-title">-->
-				<!--<h4 class="header">Let's Talk About Your Next Project!</h4>-->
+                <!--<div>-->
+                    <!--<img src="images/logo-navbar.png" class="logo-title">-->
+                    <!--<h4 class="header">Let's Talk About Your Next Project!</h4>-->
+                <!--</div>-->
                 <!--<div class="card horizontal hoverable">-->
                     <!--<div class="card-image hide-on-small-only">-->
-						<!--<div id="form-image"></div>-->
+                        <!--<div id="form-image"></div>-->
                     <!--</div>-->
                     <!--<div class="card-stacked">-->
                         <!--<div class="card-content">-->
@@ -174,13 +183,14 @@
                                             <!--<label for="message">Message</label>-->
                                         <!--</div>-->
                                     <!--</div>-->
-									<!--<div class="row">-->
-										<!--<div class="col offset-s6">-->
-                                        	<!--<a class="waves-effect waves-light btn"><i class="material-icons right">send</i>submit</a>-->
-										<!--</div>-->
-									<!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col offset-s6">-->
+                                            <!--<a class="waves-effect waves-light btn"><i-->
+                                                    <!--class="material-icons right">send</i>submit</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
                                 <!--</form>-->
-								<!---->
+
                             <!--</div>-->
                         <!--</div>-->
                     <!--</div>-->
@@ -188,13 +198,6 @@
             <!--</div>-->
         <!--</div>-->
 
-        <div class="row container">
-			<div class="col">
-				<p>btw... I really love cats.</p>
-			</div>
-		</div>
-		
     </div>
-	
-	
+
 </div>

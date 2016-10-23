@@ -12792,6 +12792,8 @@ body {
 
 main {
   flex: 1 0 auto; }
+  main div.section {
+    background-image: url("../../images/cats-bkgr.jpg"); }
 
 footer.page-footer {
   margin-top: 0; }
@@ -12801,9 +12803,6 @@ footer.page-footer {
   max-width: 100%;
   height: auto; }
 
-#index div.section {
-  background-image: url("../../images/cats-bkgr.jpg"); }
-
 #index .carousel-slider {
   height: 650px;
   background-image: url("../../images/carrousel/bkgr-gray.jpg");
@@ -12812,16 +12811,13 @@ footer.page-footer {
   #index .carousel-slider .carousel-item h1 {
     font-size: 3em; }
 
-#index .tall {
-  height: 100%; }
-
 #index .card-content.description p {
   margin-bottom: 1em; }
 
 #index .logo-title {
-  height: 3em;
+  height: 2em;
   float: left;
-  margin: 5px 5px 0 0; }
+  margin-right: 5px; }
 
 #index #me {
   background-image: url("../../images/me.jpg");
@@ -12845,5 +12841,33 @@ footer.page-footer {
     background-position: center;
     height: 100%; }
 
+@media screen and (min-width: 992px) {
+  #index #board {
+    padding-left: 5em;
+    padding-right: 5em; } }
+
 #index form .row {
   margin-bottom: 0; }
+
+#about-me .card-image img {
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  margin: 2em; }
+
+#about-me #me {
+  background-image: url("../../images/avatar.jpg");
+  background-position: center center;
+  background-size: contain;
+  height: 10em;
+  width: 10em;
+  border-radius: 100%;
+  margin: 1em; }
+
+#about-me .logo-title {
+  height: 2em;
+  float: left;
+  margin-right: 5px; }
+
+#about-me blockquote {
+  text-align: justify; }
