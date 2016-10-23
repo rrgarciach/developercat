@@ -6,6 +6,7 @@
  * Alternatively, you can export a custom function for the update:
  * module.exports = function(done) { ... }
  */
+'use strict';
 
 let adminPassword = process.env.ADMIN_PASSWORD || 'admin';
 
